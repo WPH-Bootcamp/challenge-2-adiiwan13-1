@@ -1,1 +1,44 @@
-/* code-here */
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(192, 230, 234);
+}
+/* === HEADER === */
+.header {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  background-color: rgb(173, 223, 169);
+  text-decoration: none;
+  font-size: x-large;
+  padding: 10px 50px;
+}
+.nav {
+  display: flex;
+  background-color: rgb(128, 172, 172);
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  margin: 20px;
+  text-decoration: none;
+}
+/* Button */
+.button {
+  padding: 10px 40px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  color: rgb(234, 226, 227);
+  background-color: rgb(103, 127, 119);
+  text-decoration: none;
+}
