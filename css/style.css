@@ -26,10 +26,10 @@ body {
 .logo {
   background-color: aquamarine;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   color: black;
-  margin: 0 30px;
+  margin: 0 120px;
 }
 
 /* Navigation */
@@ -44,6 +44,7 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 500;
+  font-size: 24px;
 }
 
 /* Button */
@@ -54,6 +55,7 @@ body {
   background-color: rgb(103, 127, 119);
   color: white;
   font-weight: bold;
+  font-size: 24px;
 }
 
 /* === HERO SECTION === */
@@ -63,6 +65,7 @@ body {
 }
 
 .container.hero-wrapper {
+  background-color: rgb(153, 186, 175);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,4 +121,274 @@ body {
 .image-wrapper img {
   width: 500px;
   max-width: 100%;
+}
+
+.who {
+  background-color: #df7272;
+  border: 2px solid #00aaff;
+  padding: 80px 80px;
+  text-align: center;
+}
+.title {
+  color: #300909;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border: 1px dashed #00aaff;
+  padding: 15px;
+  background-color: bisque;
+}
+.about-text {
+  color: #ba6b6b;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.6;
+  border: 1px dashed #00aaff;
+  padding: 20px;
+  background-color: azure;
+}
+
+/* ---- WHAT WE DO SECTION ---- */
+.services {
+  background-color: #d49ec9;
+  padding: 80px 80px;
+}
+/* Header */
+.services-header {
+  background-color: rgb(165, 229, 208);
+  text-align: center;
+  /* padding: 40px 20px; */
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #4d2278;
+  font-size: 60px;
+  padding: 10px 0;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  background-color: #ddf487;
+  color: #1d1010;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* Grid Cards */
+.services-grid {
+  background-color: rgb(127, 80, 21);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border: 2px solid #00aaff;
+}
+
+/* Card */
+.service-card {
+  background-color: #aee39e;
+  border: 1px solid #1c1c1c;
+  border-radius: 12px;
+  padding: 35px 25px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  color: #862323;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #200606;
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+/* --- OUR WORK SECTION --- */
+
+.our-work {
+  background-color: #d2e47e;
+  padding: 40px;
+  text-align: center;
+}
+/* Work Header */
+.container our-work {
+  text-align: center;
+  border: 2px solid #00aaff;
+  padding: 30px 20px;
+  margin-bottom: 50px;
+}
+/* .title sama dengan sebelumnya */
+/* .subtitle sama dengan sebelumnya */
+
+/* Portfolio Grid */
+.portofolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  border: 2px solid #00aaff;
+  margin: 0 40px;
+}
+/* Card */
+.portfolio-card {
+  background-color: #564ba8;
+  /* text-align: right; */
+}
+
+.portofolio-card img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.portofolio-card h3 {
+  margin-top: 25px;
+  font-size: 40px;
+  color: #5f1515;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* === MEET THE TEAM SECTION === */
+
+.team-section {
+  background-color: #eda1a1;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+/* Header */
+.team-header {
+  margin: 100px 20px;
+  display: grid;
+}
+
+/* .title sama dengan sebelumnya */
+/* .subtitle sama dengan sebelumnya */
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  border: 2px solid #00aaff;
+  padding: 80px 80px;
+  background-color: #d2e47e;
+  margin-top: 64px;
+}
+/* Team Card */
+.team-card {
+  text-align: center;
+}
+.team-card img {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.team-card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0a0303;
+  margin-bottom: 8px;
+}
+
+.team-card p {
+  font-size: 26px;
+  color: #7e1313;
+}
+
+/* === LET'S COLLABORATE SECTION === */
+.collaborate-section {
+  background-color: #79bfd6;
+  padding: 80px;
+  text-align: center;
+}
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* .title sama dengan sebelumnya */
+/* .subtitle sama dengan sebelumnya */
+
+/* Form Wrapper */
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #c7d595;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #9762d7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  align-self: start;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 2px;
+  border: 1px solid #a76464;
+  border-radius: 10px;
+  background-color: #dccccc;
+  color: rgb(67, 10, 10);
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #430f0f;
+  padding: 10px;
+  padding-top: 0;
+}
+/* Button */
+.send-btn {
+  background: #5b2dff;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+  background-color: #c3122d;
+}
+
+.footer {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
 }
