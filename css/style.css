@@ -1,4 +1,5 @@
 /* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,268 +7,292 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: rgb(192, 230, 234);
+  font-family: 'inter', sans-serif;
+  background: #000000;
 }
 
 /* === HEADER === */
 .header {
-  background-color: antiquewhite;
-  padding: 20px 0;
+  padding: 24px 140px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.navbar {
+.container {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Logo */
+/* --- Logo --- */
+.logo-wrapper {
+  width: 160px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  background-color: aquamarine;
   text-decoration: none;
-  font-size: 40px;
-  font-weight: bold;
-  color: black;
-  margin: 0 120px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fdfdfd;
+  text-decoration: none;
 }
 
 /* Navigation */
 .nav ul {
-  background-color: aquamarine;
   display: flex;
   list-style: none;
-  gap: 30px;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
 }
 
 .nav a {
   text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fdfdfd;
+  padding: 8px 16px;
+  justify-content: space-around;
 }
 
-/* Button */
+/* Button Contact Us*/
 .button {
-  padding: 12px 28px;
+  display: flex;
+  width: 160px;
+  height: 44px;
+  padding: 8px;
+
   border-radius: 999px;
+
+  background-color: #421abc;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
-  background-color: rgb(103, 127, 119);
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
+
+  justify-content: center;
+  align-items: center;
 }
 
 /* === HERO SECTION === */
+
 .hero {
-  padding: 80px 0;
-  background-color: #b5b5b5;
+  background: linear-gradient(to bottom, #000000 90%, #210a5e 98%);
+  max-width: 1440px;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
 }
 
-.container.hero-wrapper {
-  background-color: rgb(153, 186, 175);
+.hero-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
-  padding: 30px 50px;
+
+  padding: 234px 140px;
 }
 
 /* Left */
 .hero-left {
   flex: 1;
-  background-color: darkgoldenrod;
+  max-width: 687px;
 }
 
 .hero-text1 {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
-  line-height: 1.1;
-  color: black;
+  line-height: 72px;
+  color: white;
+  margin-bottom: 16px;
 }
 
 .italic {
   font-style: italic;
-  color: blue;
 }
 
 .hero-left p {
-  margin-top: 20px;
-  line-height: 1.8;
-  color: rgb(87, 34, 140);
-  font-size: 24px;
+  font-family: 'inter', sans-serif;
+  color: #717680;
+  font-size: 22px;
+  line-height: 34px;
 }
 
-/* Button 2 */
+/* Button Let's Talk */
 .button2 {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 100px;
-  background-color: aquamarine;
-  color: black;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-/* Right */
-.hero-right {
-  flex: 1;
   display: flex;
   justify-content: center;
-  background-color: aqua;
+  align-items: center;
+
+  width: 300px;
+  height: 48px;
+  margin-top: 30px;
+
+  background-color: #421abc;
+  color: #fdfdfd;
+  border-radius: 999px;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.image-wrapper img {
-  width: 500px;
+/* Hero Right */
+.hero-right {
+  position: absolute;
+  top: 15px;
+  left: 704px;
+}
+
+.hero-right img {
+  width: 590.64px;
+  height: 809px;
+  object-fit: contain;
   max-width: 100%;
 }
 
-.who {
-  background-color: #df7272;
-  border: 2px solid #00aaff;
-  padding: 80px 80px;
+/* --- WHO WE ARE SECTION --- */
+
+/* Container Who We Are */
+.who-section {
+  padding: 80px 140px;
   text-align: center;
 }
+
+/* Judul Who We Are */
 .title {
-  color: #300909;
-  font-size: 42px;
+  color: #fdfdfd;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 30px;
-  border: 1px dashed #00aaff;
-  padding: 15px;
-  background-color: bisque;
+  margin-bottom: 16px;
 }
-.about-text {
-  color: #ba6b6b;
-  font-size: 28px;
+
+/* Subtitle Who We Are warna grey*/
+.who-text {
+  color: #717680;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 1.6;
-  border: 1px dashed #00aaff;
+  line-height: 40px;
   padding: 20px;
-  background-color: azure;
+}
+
+/* Subtitle Who We Are warna putih*/
+.white {
+  color: #fdfdfd;
 }
 
 /* ---- WHAT WE DO SECTION ---- */
+
+/* Container What We Do */
 .services {
-  background-color: #d49ec9;
-  padding: 80px 80px;
-}
-/* Header */
-.services-header {
-  background-color: rgb(165, 229, 208);
+  padding: 80px 140px;
   text-align: center;
-  /* padding: 40px 20px; */
-  margin-bottom: 50px;
 }
 
-.title {
-  color: #4d2278;
-  font-size: 60px;
-  padding: 10px 0;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
+/* Judul What We Do */
+/* .title sama dengan sebelumnya  */
 
 .subtitle {
-  background-color: #ddf487;
-  color: #1d1010;
-  font-size: 30px;
+  color: #717680;
+  font-size: 18px;
+  font-weight: 400;
   padding: 10px;
+  margin-bottom: 64px;
 }
 
 /* Grid Cards */
 .services-grid {
-  background-color: rgb(127, 80, 21);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  border: 2px solid #00aaff;
 }
 
 /* Card */
 .service-card {
-  background-color: #aee39e;
-  border: 1px solid #1c1c1c;
+  border: 1px solid #181d27;
   border-radius: 12px;
-  padding: 35px 25px;
+  padding: 24px;
   text-align: center;
+  gap: 20px;
 }
 
-.service-icon {
-  font-size: 36px;
-  margin-bottom: 20px;
+.icon {
+  width: 48px;
+  height: 48px;
 }
 
 .service-card h3 {
-  color: #862323;
-  font-size: 32px;
-  margin-bottom: 15px;
+  color: #fdfdfd;
+  font-weight: 700;
+  font-size: 20px;
+  height: 34px;
+  margin-bottom: 4px;
 }
 
 .service-card p {
-  color: #200606;
-  font-size: 26px;
-  line-height: 1.7;
+  color: #717680;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 /* --- OUR WORK SECTION --- */
 
 .our-work {
-  background-color: #d2e47e;
-  padding: 40px;
-  text-align: center;
+  padding: 80px 140px;
 }
-/* Work Header */
-.container our-work {
+
+.work-header {
+  justify-content: center;
   text-align: center;
-  border: 2px solid #00aaff;
-  padding: 30px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
+
+/* Judul Our Work */
+
 /* .title sama dengan sebelumnya */
 /* .subtitle sama dengan sebelumnya */
 
-/* Portfolio Grid */
+/* Portofolio Grid */
 .portofolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  border: 2px solid #00aaff;
-  margin: 0 40px;
-}
-/* Card */
-.portfolio-card {
-  background-color: #564ba8;
-  /* text-align: right; */
+  gap: 20px;
 }
 
+/* Card */
+
 .portofolio-card img {
-  width: 100%;
-  border-radius: 12px;
+  width: 373px;
+  border-radius: 16px;
   display: block;
 }
 
 .portofolio-card h3 {
   margin-top: 25px;
-  font-size: 40px;
-  color: #5f1515;
-  font-weight: 600;
+  font-size: 20px;
+  color: #fdfdfd;
+  font-weight: 700;
   text-align: left;
 }
 
-/* === MEET THE TEAM SECTION === */
+/* --- Meet The Team Section --- */
 
 .team-section {
-  background-color: #eda1a1;
-  padding: 40px 60px;
+  padding: 80px 140px;
   text-align: center;
 }
 
 /* Header */
 .team-header {
-  margin: 100px 20px;
-  display: grid;
+  text-align: center;
+  margin-bottom: 64px;
 }
 
 /* .title sama dengan sebelumnya */
@@ -276,20 +301,20 @@ body {
 /* Team Grid */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  border: 2px solid #00aaff;
-  padding: 80px 80px;
-  background-color: #d2e47e;
-  margin-top: 64px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 56px;
+  padding: 0 56px;
 }
+
 /* Team Card */
 .team-card {
   text-align: center;
 }
+
 .team-card img {
-  width: 360px;
-  height: 360px;
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
   display: block;
@@ -297,43 +322,47 @@ body {
 }
 
 .team-card h3 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #0a0303;
-  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fdfdfd;
+  margin-bottom: 4px;
+  padding: 4px;
 }
 
 .team-card p {
-  font-size: 26px;
-  color: #7e1313;
+  font-size: 16px;
+  font-weight: 400;
+  color: #717680;
+  padding: 4px;
 }
 
-/* === LET'S COLLABORATE SECTION === */
+/* --- Let's Collaborate Section --- */
+
 .collaborate-section {
-  background-color: #79bfd6;
-  padding: 80px;
+  padding: 80px 140px;
   text-align: center;
 }
-/* Header */
+
+/* Container  */
 .contact-header {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
+
 /* .title sama dengan sebelumnya */
 /* .subtitle sama dengan sebelumnya */
 
 /* Form Wrapper */
 .contact-form-wrapper {
-  max-width: 600px;
+  width: 592px;
   margin: 0 auto;
-  background-color: #c7d595;
 }
 
 /* Form */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .form-group {
@@ -342,53 +371,59 @@ body {
 }
 
 .form-group label {
-  color: #9762d7;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 4px;
+  color: #fdfdfd;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  padding: 2px 0;
   align-self: start;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 12px 2px;
-  border: 1px solid #a76464;
-  border-radius: 10px;
-  background-color: #dccccc;
-  color: rgb(67, 10, 10);
+  padding: 9px;
+  border: 1px solid #252b37;
+  border-radius: 12px;
+  background-color: #000000;
 }
 
 .form-group textarea {
-  min-height: 140px;
+  font-family: 'inter', sans-serif;
+  min-height: 134px;
   resize: vertical;
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #430f0f;
-  padding: 10px;
-  padding-top: 0;
+  color: #717680;
+  padding: 8px 16px;
 }
+
 /* Button */
 .send-btn {
-  background: #5b2dff;
+  background: #421abc;
   color: #ffffff;
-  border: none;
   border-radius: 999px;
-  padding: 16px;
+  padding: 8px;
+
   font-size: 16px;
   font-weight: 600;
+  height: 48px;
+
   cursor: pointer;
   transition: 0.3s;
 }
 
 .send-btn:hover {
   opacity: 0.9;
-  background-color: #c3122d;
+  background-color: #c5e77d;
+  color: rgb(0, 26, 255);
 }
 
 .footer {
-  padding: 30px;
-  font-size: 20px;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
+  color: #717680;
 }
