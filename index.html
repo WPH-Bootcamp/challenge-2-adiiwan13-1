@@ -8,30 +8,35 @@
   </head>
 
   <body>
-    <!-- HEADER -->
+    <!--=== HEADER ===-->
     <header class="header">
       <div class="container navbar">
         <!-- Logo -->
-        <div class="logo-wrapper">
+        <h1 class="logo-wrapper">
           <a href="#" class="logo">Tech.</a>
-        </div>
+        </h1>
+
+        <!-- Hamburger / Close -->
+        <button class="hamburger" id="hamburger">
+          <img id="hamburgerIcon" src="assets/images/menu.svg" alt="Menu" />
+        </button>
 
         <!-- Navigation -->
-        <nav class="nav">
+        <nav class="nav" id="navMenu">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Our Work</a></li>
             <li><a href="#">Team</a></li>
           </ul>
-        </nav>
 
-        <!-- Button Contact Us -->
-        <a href="#" class="button">Contact Us</a>
+          <!-- Button Contact Us Desktop-->
+          <a href="#" class="button">Contact Us</a>
+        </nav>
       </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!--==== HERO SECTION ====-->
     <section class="hero">
       <div class="hero-wrapper">
         <!-- Hero Left -->
@@ -47,7 +52,7 @@
           </p>
 
           <!-- Button Let's Talk -->
-          <a href="#" class="button2">Let’s Talk</a>
+          <button href="#" class="button2">Let’s Talk</button>
         </div>
 
         <!-- Hero Right -->
@@ -59,7 +64,7 @@
       </div>
     </section>
 
-    <!-- WHO WE ARE SECTION -->
+    <!--=== WHO WE ARE SECTION ===-->
     <section class="who-section">
       <h2 class="title">Who We Are</h2>
 
@@ -73,7 +78,7 @@
       </p>
     </section>
 
-    <!-- WHAT WE DO SECTION -->
+    <!--=== WHAT WE DO SECTION ===-->
     <section class="services">
       <h2 class="title">What We Do</h2>
       <p class="subtitle">
@@ -91,7 +96,7 @@
         </div>
 
         <div class="service-card">
-          <img src="assets/images/2app.svg" alt="Icon App" />
+          <img class="icon" src="assets/images/2app.svg" alt="Icon App" />
           <h3>App Development</h3>
           <p class="subtitle2">
             Mobile and desktop apps tailored for your needs
@@ -136,7 +141,7 @@
       </div>
     </section>
 
-    <!--  OUR WORK SECTION -->
+    <!--====  OUR WORK SECTION ===-->
     <section class="our-work">
       <!-- Title Our Work -->
       <div class="work-header">
@@ -161,7 +166,7 @@
       </div>
     </section>
 
-    <!-- MEET THE TEAM SECTION -->
+    <!--=== MEET THE TEAM SECTION ===-->
     <section class="team-section">
       <!-- Team Header -->
       <h2 class="title">Meet the Team</h2>
@@ -195,7 +200,7 @@
       </div>
     </section>
 
-    <!-- LET'S COLLABORATE SECTION -->
+    <!--=== LET'S COLLABORATE SECTION ===-->
     <section class="collaborate-section">
       <!-- Header -->
       <div class="contact-header">
@@ -228,7 +233,25 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>@ 2025 Web Programming Hack All rights reserved</p>
+      <p>@ 2025 Web Programming Hack All rights reserved.</p>
     </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('navMenu');
+      const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+
+        if (navMenu.classList.contains('active')) {
+          hamburgerIcon.src = 'assets/images/x-close.svg';
+          hamburgerIcon.alt = 'Close';
+        } else {
+          hamburgerIcon.src = 'assets/images/menu.svg';
+          hamburgerIcon.alt = 'Menu';
+        }
+      });
+    </script>
   </body>
 </html>

@@ -96,7 +96,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* === MOBILE VERSION === */
+/* === MOBILE  */
 /* Hamburger */
 
 .hamburger {
@@ -109,10 +109,14 @@ body {
 /* === HERO SECTION === */
 
 .hero {
-  background: linear-gradient(to bottom, #000000 90%, #210a5e 98%);
-  max-width: 1440px;
-  height: 750px;
-  position: relative;
+  width: 100%;
+  min-height: 750px;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #000000 82%,
+    rgba(33, 10, 94, 0.9) 100%
+  );
   overflow: hidden;
 }
 
@@ -120,8 +124,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 234px 140px;
+  padding: 120px 140px;
+  gap: 60px;
 }
 
 /* Left */
@@ -170,16 +174,17 @@ body {
 
 /* Hero Right */
 .hero-right {
-  position: absolute;
-  top: 15px;
-  left: 704px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: static;
 }
 
 .hero-right img {
-  width: 590.64px;
-  height: 809px;
+  width: 100%;
+  max-width: 590px;
+  height: auto;
   object-fit: contain;
-  max-width: 100%;
 }
 
 /* --- WHO WE ARE SECTION --- */
